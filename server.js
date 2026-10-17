@@ -3,7 +3,7 @@ import cors from 'cors';
 import fs from 'fs';
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000; // 👈 Updated for Render compatibility
 
 app.use(cors());
 app.use(express.json());
@@ -28,7 +28,7 @@ const writeData = (data) => {
 };
 
 // ==========================================
-//           RESERVATIONS ENDPOINTS
+//            RESERVATIONS ENDPOINTS
 // ==========================================
 app.get('/api/reservations', (req, res) => {
   const db = readData();
@@ -72,7 +72,7 @@ app.delete('/api/reservations/:id', (req, res) => {
 });
 
 // ==========================================
-//               ORDERS ENDPOINTS
+//                ORDERS ENDPOINTS
 // ==========================================
 app.get('/api/orders', (req, res) => {
   const db = readData();
@@ -113,8 +113,8 @@ app.delete('/api/orders/:id', (req, res) => {
   res.json({ success: true });
 });
 
-// Start Local Server
+// Start Server
 app.listen(PORT, () => {
-  console.log(`✅ Local Restaurant Backend is running at: http://localhost:${PORT}`);
-  console.log(`📂 Data is being saved permanently to local 'database.json' file.`);
+  console.log(`✅ Backend server is running on port ${PORT}`);
+  console.log(`📂 Data is saved locally to 'database.json'.`);
 });
