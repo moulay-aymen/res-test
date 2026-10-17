@@ -1,0 +1,61 @@
+{
+  "reservations": [
+    {
+      "id": "RES-3711",
+      "name": "aymen",
+      "email": "aymen@gmail.com",
+      "phone": "N/A",
+      "date": "2026-10-17",
+      "time": "19:00",
+      "guests": "6",
+      "status": "Confirmed",
+      "createdAt": "17:47"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-0766",
+      "customer": "Online Guest",
+      "items": [
+        "Smoked Craft Old Fashioned"
+      ],
+      "total": 15,
+      "status": "Pending",
+      "type": "Online Order",
+      "createdAt": "18:09"
+    },
+    {
+      "id": "ORD-0846",
+      "customer": "Online Guest",
+      "items": [
+        "Prime Wagyu Ribeye (10oz)"
+      ],
+      "total": 45,
+      "status": "Pending",
+      "type": "Online Order",
+      "createdAt": "18:08"
+    },
+    {
+      "id": "ORD-3947",
+      "customer": "Online Guest",
+      "items": [
+        "Truffle & Wild Mushroom Risotto"
+      ],
+      "total": 24.5,
+      "status": "Pending",
+      "type": "Online Order",
+      "createdAt": "18:07"
+    },
+    {
+      "id": "ORD-2570",
+      "customer": "Online Guest",
+      "items": [
+        "Truffle & Wild Mushroom Risotto"
+      ],
+      "total": 24.5,
+      "status": "Pending",
+      "type": "Online Order",
+      "createdAt": "18:04"
+    }
+  ]
+}
